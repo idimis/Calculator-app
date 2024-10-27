@@ -1,4 +1,4 @@
-'use client';  
+'use client';   
 
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
@@ -79,8 +79,8 @@ export default function Calculator() {
         <div
           className="p-4 rounded mb-2 text-right text-3xl shadow"
           style={{
-            backgroundColor: theme === 'Neon' ? 'white' : 'inherit', // Set background to white for Neon
-            color: theme === 'Neon' ? 'purple' : 'inherit', // Set text color to purple for Neon
+            backgroundColor: theme === 'Neon' ? 'white' : 'inherit', 
+            color: theme === 'Neon' ? 'purple' : 'inherit', 
           }}
         >
           {result || input || '0'}
@@ -92,7 +92,7 @@ export default function Calculator() {
             <button
               key={v}
               onClick={() => handleClick(v)}
-              className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+              className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
               style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
             >
               {v}
@@ -102,7 +102,7 @@ export default function Calculator() {
             <button
               key={v}
               onClick={() => handleClick(v)}
-              className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+              className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
               style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
             >
               {v}
@@ -112,7 +112,7 @@ export default function Calculator() {
             <button
               key={v}
               onClick={() => handleClick(v)}
-              className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+              className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
               style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
             >
               {v}
@@ -120,49 +120,49 @@ export default function Calculator() {
           ))}
           <button
             onClick={() => handleClick('0')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl col-span-2"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl col-span-2"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             0
           </button>
           <button
             onClick={() => handleClick('.')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             .
           </button>
           <button
             onClick={() => handleClick('%')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             %
           </button>
           <button
             onClick={() => handleClick('Math.sqrt(')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             √
           </button>
           <button
             onClick={() => handleClick('**2')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             x²
           </button>
           <button
             onClick={() => handleClick('(')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             (
           </button>
           <button
             onClick={() => handleClick(')')}
-            className="p-4 bg-gray-200 rounded shadow hover:shadow-md text-2xl"
+            className="p-4 bg-gray-200 rounded shadow-lg hover:shadow-xl text-2xl"
             style={{ color: theme === 'Dark' ? 'black' : theme === 'Neon' ? 'purple' : 'inherit' }}
           >
             )
@@ -173,13 +173,13 @@ export default function Calculator() {
         <div className="flex mt-2 space-x-2">
           <button
             onClick={clear}
-            className="p-4 bg-red-500 text-white rounded shadow hover:shadow-md flex-1"
+            className="p-4 bg-red-500 text-white rounded shadow-lg hover:shadow-xl flex-1"
           >
             Clear
           </button>
           <button
             onClick={calculate}
-            className="p-4 bg-green-500 text-white rounded shadow hover:shadow-md flex-1"
+            className="p-4 bg-green-500 text-white rounded shadow-lg hover:shadow-xl flex-1"
           >
             Enter
           </button>
